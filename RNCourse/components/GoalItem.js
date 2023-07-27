@@ -12,9 +12,9 @@ function GoalItem(props) {
   return (
     <View style={styles.goalItem}>
       <Text style={styles.goalText}>{props.itemData}</Text>
-      <Pressable onPress={props.onDeleteItem.bind(this, props.id)}>
+      <Pressable>
         <View style={styles.deleteBtn}>
-          <Button title={"X"} />
+          <Button title={"X"} onPress={deleteItemHandler} />
         </View>
       </Pressable>
     </View>
