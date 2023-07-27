@@ -32,8 +32,8 @@ export default function App() {
             return (
               <GoalItem
                 itemData={itemData.item.text}
-                id={itemData.item.id}
-                onDeleteItem={deleteGoalHandler}
+                // id={itemData.item.id}
+                onDeleteItem={() => deleteGoalHandler(itemData.item.id)}
               />
             );
           }}
